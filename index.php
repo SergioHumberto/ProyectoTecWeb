@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" type="text/css" href="Estilos.css"/>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -59,7 +60,17 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#promociones">Categorias</a></li>
+
+            <li class="dropdown">
+              <a href="#promociones">Categorias</a>
+              <div class="dropdown-content">
+                <a href="#Categoria1">Categoria1</a>
+                <a href="#Categoria2">Categoria2</a>
+                <a href="#Categoria3">Categoria3</a>
+                <a href="#Categoria4">Categoria4</a>
+              </div>
+            </li>
+
             <li><a href="#promociones">Promociones del dia</a></li>
             <li><a href="#about">Acerca de</a></li>
             <li><a href="#contact">Contacto</a></li>
@@ -80,19 +91,19 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="image1.jpeg" alt="image1">
+        <img src="Resources/image1.jpeg" alt="image1">
       </div>
 
       <div class="item">
-        <img src="Imagenes/image2.jpg" alt="image2">
+        <img src="Resources/image2.jpg" alt="image2">
       </div>
 
       <div class="item">
-        <img src="Imagenes/image3.jpg" alt="image3">
+        <img src="Resources/image3.jpg" alt="image3">
       </div>
 
       <div class="item">
-        <img src="Imagenes/image4.jpg" alt="image4">
+        <img src="Resources/image4.jpg" alt="image4">
       </div>
     </div>
 
