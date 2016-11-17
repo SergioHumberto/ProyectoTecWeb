@@ -29,7 +29,7 @@
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
-
+    
     <style type="text/css">
       body{
         margin-top: 50px;
@@ -38,6 +38,16 @@
       h1{
         align-content: center;
       }
+      .carousel .item {
+        height: 450px;
+      }
+
+    .item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 450px;
+    }
 
     </style>
     
@@ -80,19 +90,19 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="image1.jpeg" alt="image1">
+        <img src="Resources/image1.jpeg" alt="image1">
       </div>
 
       <div class="item">
-        <img src="Imagenes/image2.jpg" alt="image2">
+        <img src="Resources/image2.jpg" alt="image2">
       </div>
 
       <div class="item">
-        <img src="Imagenes/image3.jpg" alt="image3">
+        <img src="Resources/image3.jpg" alt="image3">
       </div>
 
       <div class="item">
-        <img src="Imagenes/image4.jpg" alt="image4">
+        <img src="Resources/image4.jpg" alt="image4">
       </div>
     </div>
 
