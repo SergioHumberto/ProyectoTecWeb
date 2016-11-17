@@ -1,0 +1,46 @@
+<style>
+/* oculta los elementos de la lista hasta que pasa el cursor */
+.dropdown
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* oculta el contenido del menu hasta que pasa el cursor */
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* 
+Muestra el contenido del menu en forma de lista
+letras en color negro, y quita la linea de link
+ */
+.dropdown-content a
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* pone un color gris en el fondo de la opcion del menu en que este el mouse */
+.dropdown-content a:hover
+{
+    background-color: #f1f1f1
+}
+
+/* Cuando el cursor pasa por´arriba, se despliega el menú */
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+</style>
