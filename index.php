@@ -31,25 +31,23 @@
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
     
+    <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+
     <style type="text/css">
+
       body{
-        margin-top: 50px;
+        background:url(Resources/FondoAux.png) no-repeat fixed center center;
+        background-size: cover;
       }
-
-      h1{
-        align-content: center;
+      .contenedor-tabla{
+        display: table;
       }
-      .carousel .item {
-        height: 450px;
+      .contenedor-fila{
+        display: table-row;
       }
-
-    .item img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-height: 450px;
-    }
-
+      .contenedor-columna{
+        display: table-cell;
+      }
     </style>
     
   </head>
@@ -131,9 +129,28 @@
     <div class="container">
 
       <div class="starter-template">
-        <h1 align="center">Slider</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        
+        <div class="contenedor-tabla">
+          <div class="contenedor-fila">
+            <div class="contenedor-columna">
+              Logotipo
+            </div>
+
+            <div class="contenedor-columna">
+              <h1 align="center">¡El lugar que estabas esperando!</h1>
+              <p class="lead" align="center">Navega y encuentra algo ideal para tí</p>
+            </div>
+
+            <div class="contenedor-columna">
+              Imagen de registro
+            </div>
+          </div>
+        </div>
+
+        <hr>
+        <p>&copy; 2016 - No copiar</p>
       </div>
+
 
     </div><!-- /.container -->
 
