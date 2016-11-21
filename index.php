@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Home</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
@@ -31,13 +31,30 @@
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
     
-    <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
 
     <style type="text/css">
 
       body{
-        background:url(Resources/FondoAux.png) no-repeat fixed center center;
-        background-size: cover;
+        
+      }
+
+      .carousel .item {
+        height: 450px;
+      }
+
+  .item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 450px;
+  }
+
+      td .ancho{
+        width="192"
+        background: #fd0;
+        padding: 20px;
       }
       .contenedor-tabla{
         display: table;
@@ -47,6 +64,14 @@
       }
       .contenedor-columna{
         display: table-cell;
+      }
+
+      .tsbtn {
+          background: #000;
+          color: #fff;
+          margin: 20px auto 0;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
       }
     </style>
     
@@ -72,14 +97,14 @@
             <li class="dropdown">
               <a href="#promociones">Categorias</a>
               <div class="dropdown-content">
-                <a href="#Categoria1">Categoria1</a>
-                <a href="#Categoria2">Categoria2</a>
-                <a href="#Categoria3">Categoria3</a>
-                <a href="#Categoria4">Categoria4</a>
+                <a href="#Categoria1">Comida Mexicana</a>
+                <a href="#Categoria2">Comida China</a>
+                <a href="#Categoria3">Comida Italiana</a>
+                <a href="#Categoria4">Comida Rapida</a>
               </div>
             </li>
 
-            <li><a href="#promociones">Promociones del dia</a></li>
+            <li><a href="Promociones.php">Promociones del dia</a></li>
             <li><a href="#about">Acerca de</a></li>
             <li><a href="#contact">Contacto</a></li>
           </ul>
@@ -115,7 +140,9 @@
       </div>
     </div>
 
-    <!-- Left and right controls -->
+    <!-- Lef
+
+    t and right controls -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
@@ -130,29 +157,111 @@
 
       <div class="starter-template">
         
-        <div class="contenedor-tabla">
-          <div class="contenedor-fila">
-            <div class="contenedor-columna">
-              Logotipo
-            </div>
-
-            <div class="contenedor-columna">
+        <table align="center">
+          <tr>
+            <td>
+              <img src="Resources/soluciones.svg"  width="200" height="192">
+            </td>
+            <td>
               <h1 align="center">¡El lugar que estabas esperando!</h1>
               <p class="lead" align="center">Navega y encuentra algo ideal para tí</p>
+            </td>
+            <td width="192" align="center">
+              <img src="Resources/tienda-smart.svg" width="150" height="auto">
+              <p>Impulsamos tu negocio en el mundo del comercio electrónico.</p>
+              <a class="tsbtn" target="_blank">¡Comienza Ya!</a>
+            </td>
+          </tr>
+        </table>
+    </div><!-- /.container -->
+             <!-- Footer -->
+    <div id="footer-wrapper">
+      <div id="footer" class="container">
+        <header>
+          <h2>Preguntas y/o comentarios? <strong>Aqui:</strong></h2>
+        </header>
+      <div class="row">
+        <div class="6u 12u(mobile)">
+          <section>
+            <p>Por que para nosotros su opinion es muy importnte porfavor diganos como pudemos
+            mejorar nustros servicios... ¡Que tengas un muy buen día!</p>
+            <div class="row">
+              <div class="6u 12u(mobile)">
+                <ul class="icons">
+                  <li class="icon fa-home">
+                  1234 Somewhere Road<br />
+                  San Luis Potosí, SLP 00000<br />
+                  MEX
+                  </li>
+                  <li class="icon fa-phone">
+                    (000) 000-0000
+                  </li>
+                  <li class="icon fa-envelope">
+                    <a href="#">info@untitled.tld</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="6u 12u(mobile)">
+                <ul class="icons">
+                  <li class="icon fa-twitter">
+                    <a href="#">@untitled-tld</a>
+                  </li>
+                  <li class="icon fa-instagram">
+                    <a href="#">instagram.com/untitled-tld</a>
+                  </li>
+                  <li class="icon fa-dribbble">
+                    <a href="#">dribbble.com/untitled-tld</a>
+                  </li>
+                  <li class="icon fa-facebook">
+                    <a href="#">facebook.com/untitled-tld</a>
+                  </li>
+                 </ul>
+              </div>
             </div>
-
-            <div class="contenedor-columna">
-              Imagen de registro
-            </div>
+          </section>
+        </div>
+     </div>      
+  </div>
+          <div id="copyright" class="container">
+            <ul class="links">
+              <li>&copy; 2016 - Tenologias Web Universidad Autónoma de San Luis Potosí</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
           </div>
         </div>
 
-        <hr>
-        <p>&copy; 2016 - No copiar</p>
+    </div>
+
+    <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.dropotron.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/skel-viewport.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+      <script src="assets/js/main.js"></script>
+
+    <div class="container">
+
+      <div class="starter-template">
+        
+        <h1 align="center">Recomendaciones para tí</h1>
+
+        <ul align = center>
+          <li>
+            <a>Comida Mexicana</a>
+          </li>
+          <li>
+            <a>Comida China</a>
+          </li>
+          <li>
+            <a>Comida Italiana</a>
+          </li>
+          <li>
+            <a>Comida Rapida</a>
+          </li>
+        </ul>
       </div>
 
-
-    </div><!-- /.container -->
 
 
     <!-- Bootstrap core JavaScript
