@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Promociones</title>
+    <title>Mexicana</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
@@ -58,7 +58,7 @@
                 <a href="CMexicana.php">Comida Mexicana</a>
                 <a href="CChina.php">Comida China</a>
                 <a href="CItaliana.php">Comida Italiana</a>
-                <a href="CRapido.php">Comida Rapida</a>
+                <a href="CRapida">Comida Rapida</a>
               </div>
             </li>
 
@@ -78,7 +78,7 @@
           <div id="header" class="container">
 
             <!-- Logo -->
-              <h1 id="logo"><a href="index.html">Comida al instante</a></h1>
+              <h1 id="logo"><a href="index.html">Comida Mexicana</a></h1>
               <p>El lugar que estabas esperando</p>
           </div>
         </div>
@@ -87,73 +87,38 @@
         <div id="features-wrapper">
           <section id="features" class="container">
             <header>
-              <h2>Estas son las promociones del dia <strong>
+              <h2>Estos son los restaurantes <strong>
               <?php
                 include("conexion.php");
                 $c = new conexion();
-                $dias = array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado");
-                $resultado = $c->recuperaDatos($dias[date("w")]);
-                /*while ($fila = mysql_fetch_array($resultado)) {
-                  echo " Nombre: ".$fila['Id_Empresa']."<br/> ";
-                  echo " Nombre: ".$fila['Nombre_Empresa']."<br/> ";
-                  echo " Promocione: ".$fila['Descripcion']."<br/> ";
-                }*/
-                $extraido1 = mysql_fetch_array($resultado);
-                $extraido2= mysql_fetch_array($resultado);
-                $extraido3= mysql_fetch_array($resultado);
-               
-              echo "</strong>!</h2>
-            </header>";
-            echo'<div class="row">
-              <div class="4u 12u(mobile)">
+                $numCat = 1;
+                $resultado = $c->recuperaDatosCategoria($numCat);
+                echo'<div class="table-responsive">
+                <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Nombre Empresa</th>
+                    <th>Calle</th>
+                    <th>Numero</th>
+                    <th>Colonia</th>
+                    <th>Email</th>
+                  </tr>
+                </thead>
+                <tbody>';
+                while ($fila = mysql_fetch_array($resultado)) {
+                  echo"<tr>
+                    <td>".$fila['Nombre_Empresa']."</td>
+                    <td>".$fila['Calle']."</td>
+                    <td>".$fila['Numero']."</td>
+                    <td>".$fila['Colonia']."</td>
+                    <td>".$fila['Email']."</td>  
+                  </tr>"; 
+                }
+                echo"</tbody>
+                </table>
+                </div>"
 
-                <!-- Feature -->
-                  <section>
-                    <a href="#" class="image featured"><img src="Resources/legendaria.jpg" alt="" /></a>
-                    <header>
-                      <h3>'.$extraido1['Nombre_Empresa'].'</h3>
-                    </header>
-                    <p>'.$extraido1['Descripcion'].'</p>
-                  </section>
-
-              </div>
-              <div class="4u 12u(mobile)">
-
-                <!-- Feature -->
-                  <section>
-                    <a href="#" class="image featured"><img src="Resources/templebar.jpg" alt="" /></a>
-                    <header>
-                      <h3>'.$extraido2['Nombre_Empresa'].'</h3>
-                    </header>
-                    <p>'.$extraido2['Descripcion'].'</p>
-                  </section>
-
-              </div>
-              <div class="4u 12u(mobile)">
-
-                <!-- Feature -->
-                  <section>
-                    <a href="#" class="image featured"><img src="Resources/almacen.png" alt="" /></a>
-                    <header>
-                      <h3>'.$extraido3['Nombre_Empresa'].'</h3>
-                    </header>
-                    <p>'.$extraido3['Descripcion'].'</p>
-                  </section>
-                
-              </div>
-            </div>
-          </section>';
-          ?>
-        </div>
-
-      <!-- Banner -->
-        <div id="banner-wrapper">
-          <div class="inner">
-            <section id="banner" class="container">
-              <p>Use this space for <strong>profound thoughts</strong>.<br />
-              Or an enormous ad. Whatever.</p>
-            </section>
-          </div>
+              ?>
         </div>
 
       <!-- Footer -->

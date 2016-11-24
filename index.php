@@ -97,10 +97,10 @@
             <li class="dropdown">
               <a href="#promociones">Categorias</a>
               <div class="dropdown-content">
-                <a href="#Categoria1">Comida Mexicana</a>
-                <a href="#Categoria2">Comida China</a>
-                <a href="#Categoria3">Comida Italiana</a>
-                <a href="#Categoria4">Comida Rapida</a>
+                <a href="CMexicana.php">Comida Mexicana</a>
+                <a href="CChina.php">Comida China</a>
+                <a href="CItaliana.php">Comida Italiana</a>
+                <a href="CRapida.php">Comida Rapida</a>
               </div>
             </li>
 
