@@ -106,7 +106,7 @@
 
             <li><a href="Promociones.php">Promociones del dia</a></li>
             <li><a href="#about">Acerca de</a></li>
-            <li><a href="#contact">Contacto</a></li>
+            <li><a href="Contacto.php">Contacto</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
