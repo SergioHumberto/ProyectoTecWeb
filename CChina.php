@@ -219,16 +219,16 @@
 
         <ul align = center>
           <li>
-            <a>Comida Mexicana</a>
+            <a href="CMexicana.php">Comida Mexicana</a>
           </li>
           <li>
-            <a>Comida China</a>
+            <a href="CChina.php">Comida China</a>
           </li>
           <li>
-            <a>Comida Italiana</a>
+            <a href="CItaliana.php">Comida Italiana</a>
           </li>
           <li>
-            <a>Comida Rapida</a>
+            <a href="CRapida.php">Comida Rapida</a>
           </li>
         </ul>
       </div>

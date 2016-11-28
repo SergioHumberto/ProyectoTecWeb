@@ -78,7 +78,7 @@
           <div id="header" class="container">
 
             <!-- Logo -->
-              <h1 id="logo"><a href="index.html">Comida al instante</a></h1>
+              <h1 id="logo"><a href="index.html">Comida al instante </a></h1>
               <p>El lugar que estabas esperando</p>
           </div>
         </div>
@@ -254,16 +254,16 @@
 
         <ul align = center>
           <li>
-            <a>Comida Mexicana</a>
+            <a href="CMexicana.php">Comida Mexicana</a>
           </li>
           <li>
-            <a>Comida China</a>
+            <a href="CChina.php">Comida China</a>
           </li>
           <li>
-            <a>Comida Italiana</a>
+            <a href="CItaliana.php">Comida Italiana</a>
           </li>
           <li>
-            <a>Comida Rapida</a>
+            <a href="CRapida.php">Comida Rapida</a>
           </li>
         </ul>
       </div>

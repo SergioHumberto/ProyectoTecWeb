@@ -1,8 +1,8 @@
 <?php 
 	$servername = "localhost";
-	$username = "sa";
-	$password = "Pa\$\$w0rd";
-	$dbname = "proyectotecweb";
+	$username = "root";
+	$password = "ciepred";
+	$dbname = "tecwebbd";
 
 	// Create connection
 	$conn = new mysqli($servername, $username, $password, $dbname);
@@ -22,7 +22,7 @@
 	if ($conn->query($sql) === TRUE)
 	{
 	    echo "Registro insertado correctamente.";
-		echo "<center><a href='http://localhost:8080/ProyectoTecWeb/index.php'>Home</a>";
+		echo "<center><a href='http://localhost:80/ProyectoTecWeb/index.php'>Home</a>";
 	}
 	$conn->close();
 
